@@ -41,7 +41,7 @@ int main()
 	for(int i=0;i<n;++i)
 		cin>>ar[i];
 	int x=som(ar,n);
-	for(int i=0;i<n;++i)
+	for(int i=0;i<n;++i)   //sum of minimums with negation
 		ar[i]*=-1;
 	int y=som(ar,n);
 	cout<<x+y;
